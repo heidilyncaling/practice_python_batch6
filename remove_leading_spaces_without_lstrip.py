@@ -1,5 +1,10 @@
-# Get a string from the user  
-# Start from the beginning and go through each character  
-# If it's a space, keep moving forward  
-# Stop when you find the first non-space character  
+# Get a string from the user 
+text = input("String: ")
+
+# Go through each character. Stop in first non-space character  
+index = 0
+while index < len(text) and text[index] == ' ':
+    index += 1
+
 # Return the part of the string starting from that position  
+print("Result:", text[index:])
