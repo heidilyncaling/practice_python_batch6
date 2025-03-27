@@ -1,6 +1,11 @@
-# Get a string and a prefix from the user  
-# Check if the string actually starts with the prefix  
-# If it does:  
-# Figure out how long the prefix is  
-# Remove that many characters from the start of the string  
-# If not, just return the string as is—no need to change anything  
+# Get input from the user
+text = input("String: ")
+prefix = input("Prefix to remove: ")
+
+# If the string starts with the prefix
+if text[:len(prefix)] == prefix:
+    # Remove the prefix by slicing the string
+    text = text[len(prefix):]
+
+# Print the result 
+print(text)
